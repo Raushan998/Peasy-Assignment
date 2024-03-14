@@ -1,0 +1,9 @@
+user_update_job:
+  cron: "0 * * * *"
+  class: "UserUpdateJob"
+  queue: default
+
+daily_update_job:
+  cron: "0 0 * * *"
+  class: "DailyUpdateJob"
+  queue: default
